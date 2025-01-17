@@ -19,20 +19,20 @@ import { PROJECT_TITLE } from "~/lib/constants";
 
 const AIR_HORN_SOUNDS = [
   {
-    name: "Classic Horn",
-    url: "https://assets.mixkit.co/active_storage/sfx/2093/2093-preview.mp3"
+    name: "Classic Air Horn",
+    url: "https://assets.mixkit.co/sfx/preview/mixkit-classic-air-horn-1631.mp3"
   },
   {
-    name: "Long Blast", 
-    url: "https://assets.mixkit.co/active_storage/sfx/2094/2094-preview.mp3"
+    name: "Truck Horn", 
+    url: "https://assets.mixkit.co/sfx/preview/mixkit-truck-horn-1632.mp3"
   },
   {
-    name: "Short Toot",
-    url: "https://assets.mixkit.co/active_storage/sfx/2095/2095-preview.mp3"
+    name: "Train Horn",
+    url: "https://assets.mixkit.co/sfx/preview/mixkit-train-horn-1633.mp3"
   },
   {
-    name: "Party Horn",
-    url: "https://assets.mixkit.co/active_storage/sfx/2096/2096-preview.mp3"
+    name: "Ship Horn",
+    url: "https://assets.mixkit.co/sfx/preview/mixkit-ship-horn-1634.mp3"
   }
 ];
 
