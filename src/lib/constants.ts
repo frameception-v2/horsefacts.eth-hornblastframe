@@ -1,3 +1,3 @@
-export const PROJECT_ID = 'hornblastframe';
-export const PROJECT_TITLE = "Air Horn Party";
-export const PROJECT_DESCRIPTION = "A Farcaster Frame soundboard by horsefacts.eth";
+export const PROJECT_ID = 'HornBlastFrame';
+export const PROJECT_TITLE = "HornBlastFrame";
+export const PROJECT_DESCRIPTION = "A Farcaster Frame for blasting air horns - by horsefacts.eth";
