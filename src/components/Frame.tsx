@@ -20,19 +20,19 @@ import { PROJECT_TITLE } from "~/lib/constants";
 const AIR_HORN_SOUNDS = [
   {
     name: "Classic Horn",
-    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+    url: "https://assets.mixkit.co/active_storage/sfx/2093/2093-preview.mp3"
   },
   {
-    name: "Long Blast",
-    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn+2&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+    name: "Long Blast", 
+    url: "https://assets.mixkit.co/active_storage/sfx/2094/2094-preview.mp3"
   },
   {
     name: "Short Toot",
-    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn+3&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+    url: "https://assets.mixkit.co/active_storage/sfx/2095/2095-preview.mp3"
   },
   {
     name: "Party Horn",
-    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn+4&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+    url: "https://assets.mixkit.co/active_storage/sfx/2096/2096-preview.mp3"
   }
 ];
 
