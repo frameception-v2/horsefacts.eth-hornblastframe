@@ -17,19 +17,51 @@ import { createStore } from "mipd";
 import { Label } from "~/components/ui/label";
 import { PROJECT_TITLE } from "~/lib/constants";
 
-function ExampleCard() {
+const AIR_HORN_SOUNDS = [
+  {
+    name: "Classic Horn",
+    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+  },
+  {
+    name: "Long Blast",
+    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn+2&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+  },
+  {
+    name: "Short Toot",
+    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn+3&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+  },
+  {
+    name: "Party Horn",
+    url: "https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Air+Horn+4&filename=mp3/MTI1OTYxNDQ1MTI1OTY3_3jHt1n1rPwU.MP3"
+  }
+];
+
+function SoundboardCard() {
+  const playSound = useCallback((url: string) => {
+    const audio = new Audio(url);
+    audio.play().catch((error) => {
+      console.error("Error playing sound:", error);
+    });
+  }, []);
+
   return (
     <Card className="border-neutral-200 bg-white">
       <CardHeader>
-        <CardTitle className="text-neutral-900">Welcome to the Frame Template</CardTitle>
+        <CardTitle className="text-neutral-900">Air Horn Party 🎉</CardTitle>
         <CardDescription className="text-neutral-600">
-          This is an example card that you can customize or remove
+          Tap to blast some horns!
         </CardDescription>
       </CardHeader>
-      <CardContent className="text-neutral-800">
-        <p>
-          Your frame content goes here. The text is intentionally dark to ensure good readability.
-        </p>
+      <CardContent className="grid grid-cols-2 gap-2">
+        {AIR_HORN_SOUNDS.map((sound, index) => (
+          <PurpleButton 
+            key={index}
+            onClick={() => playSound(sound.url)}
+            className="h-16"
+          >
+            {sound.name}
+          </PurpleButton>
+        ))}
       </CardContent>
     </Card>
   );
@@ -137,7 +169,7 @@ export default function Frame(
     >
       <div className="w-[300px] mx-auto py-2 px-2">
         <h1 className="text-2xl font-bold text-center mb-4 text-neutral-900">{title}</h1>
-        <ExampleCard />
+        <SoundboardCard />
       </div>
     </div>
   );
